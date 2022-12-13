@@ -64,16 +64,6 @@ textarea {
           box-sizing: border-box;
 }
 
-:focus,
-:active {
-  outline: none;
-}
-
-a:focus,
-a:active {
-  outline: none;
-}
-
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
@@ -198,7 +188,7 @@ ul li {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mail:hover {
+.mail:hover, .mail:focus {
   color: #2196F3;
 }
 
@@ -262,7 +252,7 @@ ul li {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.tel:hover {
+.tel:hover, .tel:focus {
   color: #2196F3;
 }
 
@@ -541,6 +531,7 @@ ul li {
 }
 .card-soc:hover, .card-soc:focus {
   background-color: #2196F3;
+  outline: none;
 }
 
 .card-soc-icon {
